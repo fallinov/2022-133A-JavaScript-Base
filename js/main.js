@@ -7,7 +7,15 @@
 
 (function main() {
   'use strict'; // Demande une interprétation stricte du code
-  const prenom = prompt('Entrez votre prénom');
+  const val1 = Number( prompt('Entrez un nombre') );
+  const val2 = Number( prompt('Entrez un autre nombre') );
 
-  alert(`Bonjour, ${prenom} !`);
+  if( isNaN(val1) || isNaN(val2)) {
+    alert('Entrez des nombres !');
+    return;
+  }
+
+  alert(`Résultat, ${val1 + val2} !`);
+
+
 }()); // Main IIFE
