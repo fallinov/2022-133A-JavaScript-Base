@@ -7,10 +7,7 @@
 
 (function main() {
   'use strict'; // Demande une interprétation stricte du code
+  const prenom = prompt('Entrez votre prénom');
 
-    let a = 'Bonjour';
-    let b = 'toto';
-
-    console.log(a, b);
+  alert(`Bonjour, ${prenom} !`);
 }()); // Main IIFE
-
